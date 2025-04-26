@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav {
+  background: #2f3542;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff70fa;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #70dbff;
+}
+
+header {
+  background: linear-gradient(135deg, #cb70ff, #d052ed);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header span {
+  color: #ffdd59;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2f3542;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #2f3542;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
